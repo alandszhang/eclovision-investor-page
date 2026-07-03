@@ -96,6 +96,61 @@ export const team = [
   },
 ]
 
+export const marketMetrics = [
+  { value:'32.72M', unit:bi('units','台'), label:bi('Global cleaning robot shipments, 2025','2025 年全球清洁机器人出货量'), note:bi('+20.1% YoY','同比 +20.1%'), source:'IDC' },
+  { value:'$9.31B', unit:'', label:bi('Global robot vacuum market value, 2024','2024 年全球扫地机器人市场规模'), note:bi('Market value','市场规模'), source:'IDC' },
+  { value:'24.12M', unit:bi('units','台'), label:bi('Smart vacuum shipments, 2025','2025 年智能扫地机器人出货量'), note:bi('+17.1% YoY','同比 +17.1%'), source:'IDC' },
+  { value:'23.7%', unit:'CAGR', label:bi('Estimated cleaning robot market growth, 2025–2030','2025–2030 年清洁机器人市场预计增速'), note:bi('Estimated growth','预计增速'), source:'Grand View Research' },
+]
+
+export const robotCategories = [
+  { name:bi('Smart Vacuum / Mop','智能扫地 / 拖地机器人'), value:'24.12M', note:bi('units in 2025','2025 年出货量'), text:bi('Largest category and core household cleaning segment','最大品类及家庭清洁核心市场') },
+  { name:bi('Lawn Mower Robotics','割草机器人'), value:'1.99M', note:'+63.8% YoY', text:bi('Fastest outdoor growth driven by cordless / wire-free upgrades','由无线化升级驱动、增长最快的户外品类') },
+  { name:bi('Window Cleaning Robots','擦窗机器人'), value:'2.37M', note:'+70.4% YoY', text:bi('Rapid adoption in urban residential use','在城市住宅场景中快速普及') },
+  { name:bi('Pool Cleaning Robots','泳池清洁机器人'), value:bi('Steady','稳定'), note:bi('Niche market','细分市场'), text:bi('Stable niche with growing cordless penetration','稳定细分市场，无线产品渗透率持续提升') },
+]
+
+export const shipmentTrend = [
+  { period:'2024 H2', shipments:10.0, lawn:63.8, window:50 },
+  { period:'2025 H1', shipments:11.2, lawn:85, window:70 },
+  { period:'2025 H2', shipments:13.0, lawn:45, window:35 },
+]
+
+export const topVendors = [
+  { rank:1, name:'Roborock', shipments:'5.8M', share:'17.7%' },
+  { rank:2, name:'ECOVACS', shipments:'4.7M', share:'14.3%' },
+  { rank:3, name:'Dreame', shipments:'3.4M', share:'10.5%' },
+  { rank:4, name:'Xiaomi', shipments:'2.2M', share:'6.7%' },
+  { rank:5, name:'Narwal', shipments:'1.7M', share:'5.3%' },
+]
+
+export const regions = [
+  { name:bi('Europe','欧洲'), stat:'~+16%', text:bi('Growth in 2024 · Mature premium market','2024 年增长 · 成熟高端市场') },
+  { name:bi('Americas','美洲'), stat:'~-1%', text:bi('Growth in 2024 · Softer demand versus Europe / APAC','2024 年增长 · 需求弱于欧洲 / 亚太') },
+  { name:bi('China / APAC','中国 / 亚太'), stat:'5.389M', text:bi('China robot vacuum shipments in 2024 (+6.7% YoY); APAC ~+16% growth','2024 年中国扫地机器人出货量（同比 +6.7%）；亚太增长约 +16%') },
+  { name:bi('Emerging Markets / Other Regions','新兴市场 / 其他地区'), stat:bi('Long-term','长期增长'), text:bi('Smaller base, faster long-term adoption potential','基数较小，长期普及潜力更高') },
+]
+
+export const vacuumShares = [
+  { year:'2023', values:[14.7,15.1,5.5,9.2,3.7,50.8] },
+  { year:'2024', values:[16.0,13.5,8.0,9.7,6.6,46.3] },
+  { year:'2025', values:[24.1,13.8,13.5,9.1,7.3,32.2] },
+]
+export const vacuumBrands = ['Roborock','Ecovacs','Dreame','Xiaomi','Narwal','Others']
+
+export const outlookMetrics = [
+  { value:'24.12M', label:bi('Smart vacuum shipments, 2025','2025 年智能扫地机器人出货量'), note:bi('+17.1% YoY / 74% of total cleaning robot shipments','同比 +17.1% / 占清洁机器人总出货量 74%') },
+  { value:'1.99M', label:bi('Lawn mower robot shipments, 2025','2025 年割草机器人出货量'), note:bi('+63.8% YoY / fastest-growing major category','同比 +63.8% / 增长最快的主要品类') },
+  { value:'1.32M', label:bi('Wire-free lawn mower shipments','无线割草机器人出货量'), note:bi('66.2% of market / +182.4% YoY','占市场 66.2% / 同比 +182.4%') },
+  { value:'+95.6% / +40.3%', label:bi('Fastest smart vacuum regional growth','智能扫地机器人增长最快的区域'), note:bi('Middle East & Africa / Central & Eastern Europe','中东和非洲 / 中东欧') },
+]
+
+export const marketSignals = [
+  bi('Chinese brands lead innovation and scale across smart vacuum and adjacent cleaning categories.','中国品牌在智能扫地及相邻清洁品类中引领创新与规模化。'),
+  bi('Niche segments such as lawn mower and pool cleaning robotics remain in competitive flux.','割草与泳池清洁机器人等细分市场仍处于竞争格局变化期。'),
+  bi('AI is the long-term moat: obstacle avoidance, path planning, adaptive cleaning, and human–machine interaction.','AI 是长期护城河：障碍物规避、路径规划、自适应清洁与人机交互。'),
+]
+
 export const comparison = [
   { company:'GZ Hessian-Matrix', product:'RoboBaton MINI / RoboBaton VIOBOT2', cpu:'Cortex-A76*4 + Cortex-A55*4', gpu:'Mali-G610 MC4 + 6 TOPS', fn:bi('Localization / Mapping / Planning','定位 / 建图 / 规划'), price:'S$999' },
   { company:'BJ Human+', product:'司眸 X-Mini (Dec 25)', cpu:'–', gpu:'–', fn:bi('Obstacle Detection / Perception','障碍物检测 / 感知'), price:'–' },
