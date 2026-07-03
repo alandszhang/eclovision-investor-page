@@ -60,6 +60,42 @@ export const customers = [
   { en: 'Shenzhen Camsense', zh: '深圳欢创科技有限公司', domain: bi('LiDAR Solution Provider', '激光雷达解决方案供应商') },
 ]
 
+export const team = [
+  {
+    name: 'Dr. Zhang Dongshuo', role: bi('CEO & CTO', '首席执行官兼首席技术官'), image: 'zhang-dongshuo.png',
+    points: [
+      bi('PhD in Robotics from CCDS, NTU', '南洋理工大学 CCDS 机器人学博士'),
+      bi('12+ years robotics R&D experience', '12+ 年机器人研发经验'),
+      bi('6+ years industry experience (Sony, DJI, Camsense)', '6+ 年产业经验（Sony、DJI、Camsense）'),
+      bi('6+ years robotics research experience (NTU, HKUST, CUHK)', '6+ 年机器人科研经验（NTU、HKUST、CUHK）'),
+    ]
+  },
+  {
+    name: 'Miyuru Thathsara', role: bi('Chief Scientist', '首席科学家'), image: 'miyuru-thathsara.png',
+    points: [
+      bi('PhD student in Robotics, CCDS, NTU (Final Year)', '南洋理工大学 CCDS 机器人学博士生（最后一年）'),
+      bi('4 years robotics R&D experience', '4 年机器人研发经验'),
+      bi('1 year industry experience (LSEG Technologies)', '1 年产业经验（LSEG Technologies）'),
+    ]
+  },
+  {
+    name: 'Lin Peiyi', role: bi('Chief Scientist', '首席科学家'), image: 'lin-peiyi.png',
+    points: [
+      bi('Master student in Robotics, CCDS, NTU', '南洋理工大学 CCDS 机器人学硕士生'),
+      bi('Awardee of China Undergraduate Mathematical Contest in Modeling', '全国大学生数学建模竞赛获奖者'),
+      bi('Awardee of ASC Student Supercomputer Challenge', 'ASC 大学生超级计算机竞赛获奖者'),
+    ]
+  },
+  {
+    name: 'Prof. Lam Siew Kei', role: bi('Scientific Advisor', '科学顾问'), image: 'lam-siew-kei.png',
+    points: [
+      bi('Associate Professor, CCDS, NTU', '南洋理工大学 CCDS 副教授'),
+      bi('Expertise in Edge AI for Robotics', '机器人边缘 AI 专家'),
+      bi('15+ years working with industries and government agencies to develop prototypes, proof-of-concepts, and field trials', '15+ 年产业与政府机构合作经验，涵盖原型、概念验证及现场试验'),
+    ]
+  },
+]
+
 export const comparison = [
   { company:'GZ Hessian-Matrix', product:'RoboBaton MINI / RoboBaton VIOBOT2', cpu:'Cortex-A76*4 + Cortex-A55*4', gpu:'Mali-G610 MC4 + 6 TOPS', fn:bi('Localization / Mapping / Planning','定位 / 建图 / 规划'), price:'S$999' },
   { company:'BJ Human+', product:'司眸 X-Mini (Dec 25)', cpu:'–', gpu:'–', fn:bi('Obstacle Detection / Perception','障碍物检测 / 感知'), price:'–' },
